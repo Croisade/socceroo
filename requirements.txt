@@ -1,0 +1,7 @@
+pandas
+openpyxl
+xlrd
+matplotlib
+scikit-learn
+joblib
+html5lib
