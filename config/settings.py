@@ -165,12 +165,55 @@ TEAM_NAME_TO_CLUB = {
     "Chivas USA": Club.LAFC  # ✅ special case
 }
 
+FB_REF_TEAM_TO_CLUB = {
+    "Columbus Crew": Club.Columbus.value,
+    "Inter Miami": Club.Miami.value,
+    "NYCFC": Club.NYCFC.value,
+    "Chicago Fire": Club.Chicago.value,
+    "NE Revolution": Club.NewEngland.value,
+    "NY Red Bulls": Club.NYRB.value,
+    "D.C. United": Club.DC.value,
+    "Portland Timbers": Club.Portland.value,
+    "Atlanta Utd": Club.Atlanta.value,
+    "Nashville SC": Club.Nashville.value,
+    "Orlando City": Club.Orlando.value,
+    "Toronto FC": Club.Toronto.value,
+    "CF Montréal": Club.Montreal.value,
+    "FC Cincinnati": Club.Cincinnati.value,
+    "Minnesota Utd": Club.Minnesota.value,
+    "Colorado Rapids": Club.Colorado.value,
+    "Houston Dynamo": Club.Houston.value,
+    "Philadelphia Union": Club.Philadelphia.value,
+    "Real Salt Lake": Club.SaltLake.value,
+    "Austin": Club.Austin.value,
+    "Seattle Sounders": Club.Seattle.value,
+    "Sporting KC": Club.KansasCity.value,
+    "SJ Earthquakes": Club.SanJose.value,
+    "LA Galaxy": Club.LosAngeles.value,
+    "LAFC": Club.LAFC.value,
+    "FC Dallas": Club.Dallas.value,
+    "Vancouver W'caps": Club.Vancouver.value,
+    "Charlotte": Club.Charlotte.value,
+    "San Diego FC": Club.SanDiego.value,
+    "St. Louis": Club.StLouis.value,
+}
+
+
+COLS_TO_FEATURES = {
+    "Result_x": "Result",
+    "Round_x": "Round",
+    "GF_x": "GF",
+    "Sh_x": "SH",
+    "Venue_x": "Venue",
+    'GA_x': 'GA',
+    'Opponent_x': 'Opponent'
+}
 
 ATTR = {"id": "matchlogs_for"}
 
 CURR_YEAR = 2025
 
-LINEAR_COLS = ['SCA', 'GCA', 'GF_x', 'Sh_x','SoT', 'npxG', 'Result_x']
+LINEAR_COLS = ['SCA', 'GCA', 'GF_x', 'Sh_x','SoT', 'npxG', 'Result_x', 'Venue_x', 'GA_x', 'Opponent_x']
 
 RELEVANT_YEARS = [2021,2022,2023,2024,2025]
 
